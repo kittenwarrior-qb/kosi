@@ -12,10 +12,12 @@
 
 header {
     box-shadow: 0 1px 1px rgb(228, 226, 226);
+    z-index: 1000;
+    background-color: white;
 }
 
 header nav {
-    padding: 0 4%;
+    padding: 0 3.8%;
     width: 100%;
     height: 105px;
     display: flex;
@@ -35,10 +37,16 @@ header .links ul li a {
     color: #111111;
     font-weight: 600;
     padding-left: 55px;
+    transition: 0.2s;
 }
 
 header .links ul li .active {
     color: #cd8f5c;
+}
+
+header .links ul li a:hover {
+    color: #cd8f5c;
+
 }
 
 header nav .logo a img {
@@ -55,3 +63,57 @@ header nav .icon__links span i {
     padding-left: 10px;
 }
 /* HEADER END*/
+
+
+/* HERO  */
+.hero {
+    position: relative;
+}
+
+.hero .hero__image{
+    padding: 0 3.8%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.hero .content {
+    position: absolute;
+    top: 180px;
+    right: 450px;
+    width: 450px;
+    text-align: center;
+}
+
+.hero .content .name {
+    font-size: 85px;
+    color: #111111;
+}
+
+.hero .content .article {
+    font-size: 14px ;
+    color: #585858;   
+}
+
+.hero .content .price {
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 20px;
+    color: #111111;
+}
+
+.hero .content .buy {
+    font-size: 18px;
+    padding-top: 50px;
+    font-weight: 600;
+}
+
+.hero .content .line {
+    height: 2px;
+    width: 100px;
+    background-color: #111111;
+    margin-top: 18px;
+    margin-left: 39%;
+}
+
+/* HERO END */
