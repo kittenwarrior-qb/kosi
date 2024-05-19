@@ -10,19 +10,38 @@
 
 /* HEADER */
 
-header {
-    box-shadow: 0 1px 1px rgb(228, 226, 226);
-    z-index: 1000;
-    background-color: white;
-}
-
 header nav {
-    padding: 0 3.8%;
+    box-shadow: 0 1px 1px rgb(228, 226, 226);
+    background-color: white;
     width: 100%;
     height: 105px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: fixed;
 }
+
+header .links ul li ul li a {
+    color: #585858;
+    font-weight: 400;
+}
+
+header .links ul li ul {
+    box-shadow: -1px 1px 1px 1px rgba(216, 216, 216, 0.75);
+    height: 100px;
+    width: 180px;
+    background-color: white;
+    padding-top: 15px;
+    position: absolute;
+    display: none;
+    transition: 0.2s;
+}
+
+
+header .links ul li:hover ul {
+    display: block;
+}
+
 
 header .links {
     padding-left: 70px;
@@ -66,49 +85,47 @@ header nav .icon__links span i {
 
 
 /* HERO  */
-.hero {
-    position: relative;
-}
 
-.hero .hero__image{
-    padding: 0 3.8%;
-    position: absolute;
-    top: 0;
+.hero .hero__content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 105px;
     z-index: -1;
 }
 
 .hero .content {
     position: absolute;
-    top: 180px;
-    right: 450px;
-    width: 450px;
+    padding-left: 30%;
+    padding-top: 10%;
     text-align: center;
 }
 
-.hero .content .name {
+.hero .content .content__name {
+    width: 500px;
     font-size: 85px;
     color: #111111;
 }
 
-.hero .content .article {
+.hero .content .content__article {
     font-size: 14px ;
     color: #585858;   
 }
 
-.hero .content .price {
+.hero .content .content__price {
     font-size: 22px;
     font-weight: 600;
     padding-top: 20px;
     color: #111111;
 }
 
-.hero .content .buy {
+.hero .content .content__buy {
     font-size: 18px;
     padding-top: 50px;
     font-weight: 600;
 }
 
-.hero .content .line {
+.hero .content .content__line {
     height: 2px;
     width: 100px;
     background-color: #111111;
@@ -117,3 +134,67 @@ header nav .icon__links span i {
 }
 
 /* HERO END */
+
+/* PRODUCT  */
+.product {
+    margin-top:40px;
+    margin-left: 50px;
+    display: flow-root;
+
+}
+
+.product .card {
+    float: left;
+    margin: 30px 20px 20px;
+
+}
+
+.product .card img {
+    width: 410px;
+    height: 486px;
+}
+
+.product .card .product__name {
+    font-size: 16px;
+    padding-top: 20px;
+    margin-bottom: 8px;
+}
+
+.product .card .product__price {
+    font-size: 16px;
+    font-weight: 600;
+}
+/* PRODUCT END */
+
+/* FOOTER */
+.nearlyfooter {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.nearlyfooter .passage {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 1.5;
+}
+
+.text__color {
+    color: #cd8f5c;
+}
+
+
+footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    height: 100px;
+    border-top: solid 1px rgb(228, 225, 225);
+    color: #585858;
+}
+/* FOOTER END*/
